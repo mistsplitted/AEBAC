@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<title>AEBAC</title>
+</head>
+<body>
+	<header>
+	        <a href="index.html"><img src="images/logo.jpg" alt="" class="logo"></a>
+	        <nav>
+			<ul class="navbar" id="navtoggle">
+				<li><a class="panget" href="index.html">Home</a></li>
+				<li><a class="panget" href="shop.html">Shop</a></li>
+				<li><a class="panget" href="about.html">About</a></li>					
+			</ul>
+			</nav>
+			<i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+	</header>
+	<main>
+	<div class="index-content">
+	<div class="home-content">
+	    <div class="home-content-p">
+	    <p>A Journey of a <br> Thosand Miles <br>Begins with a <br> Fabulous Pair of Shoes</p></div>
+	    <div class="home-content-a">
+	    <a href="shop.html">Shop Now <i class="fa-solid fa-arrow-right" style="color:black;"></i></a>   
+	    </div>
+	</div>
+	<div class="slider">
+        <div class="slides">
+           
+           <input type="radio" name="radio-btn" id="radio1" checked>
+           <input type="radio" name="radio-btn" id="radio2">
+           <input type="radio" name="radio-btn" id="radio3">
+           <input type="radio" name="radio-btn" id="radio4">
+           
+           <div class="slide first">
+               <img src="images/carslide1.jpg" alt="imgae">
+           </div>
+           <div class="slide">
+               <img src="images/carslide2.jpg" alt="imgae">
+           </div>
+            <div class="slide">
+               <img src="images/carslide3.jpg" alt="imgae">
+           </div>
+           <div class="slide">
+               <img src="images/carslide4.jpg" alt="imgae">
+           </div>
+        </div>
+    </div>
+	</div>
+    
+		
+	</main>
+	<footer>
+		<center>
+		<p>© 2023 <a href="https://www.youtube.com/@dmmofficialpageph6756">All rights reserved. AEBAC</a></p>
+		</center>
+	</footer>
+<script type="text/javascript">
+    var counter = 2;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 5000);
+    
+</script>
+<script>
+            var navtoggle = document.getElementById("navtoggle");
+    
+            navtoggle.style.maxHeight = "0px";
+    
+            function menutoggle(){
+                if(navtoggle.style.maxHeight == "0px"){
+                    navtoggle.style.maxHeight = "200px";
+                }else {
+                    navtoggle.style.maxHeight = "0px";
+                }
+    }
+        </script>
+</body>
+</html>

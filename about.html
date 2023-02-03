@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<title>AEBAC</title>
+</head>
+<body>
+	<header>
+	        <a href="index.html"><img src="images/logo.jpg" alt="" class="logo"></a>
+	        <nav>
+			<ul class="navbar" id="navtoggle">
+				<li><a class="panget" href="index.html">Home</a></li>
+				<li><a class="panget" href="shop.html">Shop</a></li>
+				<li><a class="panget" href="about.html">About</a></li>					
+			</ul>
+			</nav>
+			<i class="fa-solid fa-bars" onclick="menutoggle()"></i>
+	</header>
+	<main>
+	    <div class="about-content"> 
+	     <div class="write">
+		<h1>About Us</h1>
+		<p>AEBAC is all about footwear. We have been in the shoe business for over a month. Yes you read that correctly, we are a new reseller shop of shoes online. Today we are proud to offer our best customer service to patrons both online here at AEBAC and in our shoe store in the Philippines. For more information about the product message us at our Facebook Page AEBAC Shoe Store PH.</p><br>
+        <p>AEBAC, the newest online shoe store in the Philippines and our only paent company, poudly open its website to the world of ecommerce in this year or 2023. Since starting AEBAC, we have devoted our energy to providing personable and knowledgable customer service with quick free shipping to every customer. Excellent customer service is the standard of AEBAC that will not be compromised. Our goal is to make sure that your demands of quality, style and comfort are fulfilled.</p><br>
+        <p>Style, comfort and quality are the focus of the AEBAC buying team. The brands we carry are a reflection of our values which is why we search the world for the finest footwear every season. We know that if you don’t take care of your feet then your whole body suffers. Brands such as ( insert ) what we are about. Top-quality styles that are crafted with support, style and exquisite materials.</p>
+        </div>
+	    <img src="images/aboutimg.jpeg" alt="" class="about-img">
+	    </div> 
+	</main>
+	<footer>
+		<center>
+		<p>© 2023 <a href="https://www.youtube.com/@dmmofficialpageph6756">All rights reserved. AEBAC</a></p>
+		</center>
+	</footer>
+	<script>
+            var navtoggle = document.getElementById("navtoggle");
+    
+            navtoggle.style.maxHeight = "0px";
+    
+            function menutoggle(){
+                if(navtoggle.style.maxHeight == "0px"){
+                    navtoggle.style.maxHeight = "200px";
+                }else {
+                    navtoggle.style.maxHeight = "0px";
+                }
+    }
+        </script>
+
+</body>
+</html>
